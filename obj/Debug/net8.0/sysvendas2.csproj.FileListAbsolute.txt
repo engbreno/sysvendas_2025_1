@@ -1,0 +1,14 @@
+/Users/breno/profbreno/2025_1/pooI/sysvendas2/bin/Debug/net8.0/sysvendas2
+/Users/breno/profbreno/2025_1/pooI/sysvendas2/bin/Debug/net8.0/sysvendas2.deps.json
+/Users/breno/profbreno/2025_1/pooI/sysvendas2/bin/Debug/net8.0/sysvendas2.runtimeconfig.json
+/Users/breno/profbreno/2025_1/pooI/sysvendas2/bin/Debug/net8.0/sysvendas2.dll
+/Users/breno/profbreno/2025_1/pooI/sysvendas2/bin/Debug/net8.0/sysvendas2.pdb
+/Users/breno/profbreno/2025_1/pooI/sysvendas2/obj/Debug/net8.0/sysvendas2.GeneratedMSBuildEditorConfig.editorconfig
+/Users/breno/profbreno/2025_1/pooI/sysvendas2/obj/Debug/net8.0/sysvendas2.AssemblyInfoInputs.cache
+/Users/breno/profbreno/2025_1/pooI/sysvendas2/obj/Debug/net8.0/sysvendas2.AssemblyInfo.cs
+/Users/breno/profbreno/2025_1/pooI/sysvendas2/obj/Debug/net8.0/sysvendas2.csproj.CoreCompileInputs.cache
+/Users/breno/profbreno/2025_1/pooI/sysvendas2/obj/Debug/net8.0/sysvendas2.dll
+/Users/breno/profbreno/2025_1/pooI/sysvendas2/obj/Debug/net8.0/refint/sysvendas2.dll
+/Users/breno/profbreno/2025_1/pooI/sysvendas2/obj/Debug/net8.0/sysvendas2.pdb
+/Users/breno/profbreno/2025_1/pooI/sysvendas2/obj/Debug/net8.0/sysvendas2.genruntimeconfig.cache
+/Users/breno/profbreno/2025_1/pooI/sysvendas2/obj/Debug/net8.0/ref/sysvendas2.dll
