@@ -1,8 +1,10 @@
+using System.Text;
+
 namespace sysvendas2.Telas;
-class TelaPrincipal
+static class TelaPrincipal
 {
-    private List<Opcao> opcoes;
-    public TelaPrincipal()
+    public static List<Opcao> opcoes;
+    static TelaPrincipal()
     {
         opcoes = new List<Opcao>
         {
@@ -15,15 +17,46 @@ class TelaPrincipal
         newOpt.Descricao = "Oi tudo bem";
         
     }
-    public void Show()
+    public static void Show()
     {
-        ExibeTitulo();
-        foreach (var opt in opcoes)
+        while (true)
         {
-            Console.WriteLine($"{opt.Id} - {opt.Descricao}");
+            Console.Clear();
+            Console.OutputEncoding = Encoding.UTF8;
+            ExibeTitulo();
+            foreach (var opt in opcoes)
+            {
+                Console.WriteLine($"{opt.Id} - {opt.Descricao}");
+            }
+        
+            Console.WriteLine("\nDigite a opção desejada:");
+
+            if (int.TryParse(Console.ReadLine(), out int opcaoSelecionada))
+            {
+                if (opcaoSelecionada == 3)
+                {
+                    Console.WriteLine("\nSaindo...");
+                    break;
+                } else if (opcaoSelecionada == 1)
+                {
+                    Console.WriteLine("\nCadastrando clientes");
+                }
+                else if (opcaoSelecionada == 2)
+                {
+                    Console.WriteLine("\nListando clientes");
+                }
+            }
+            else
+            {
+                Console.WriteLine("\nEntrada inválida. Digite um número.");
+            }
+            Console.WriteLine("Pressione qualquer tecla para continuar...");
+            Console.ReadKey();
+            
         }
+      
     }
-    private void ExibeTitulo()
+    private static void ExibeTitulo()
     {
         Console.WriteLine("=======================================");
         Console.WriteLine("=========== 🔥 SYSVENDAS 2 🔥==========");
