@@ -40,10 +40,12 @@ static class TelaPrincipal
                 } else if (opcaoSelecionada == 1)
                 {
                     Console.WriteLine("\nCadastrando clientes");
+                    TelaCadastroCliente.Show();
                 }
                 else if (opcaoSelecionada == 2)
                 {
                     Console.WriteLine("\nListando clientes");
+                    TelaListaClientes.Show();
                 }
             }
             else
