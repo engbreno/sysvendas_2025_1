@@ -1,6 +1,7 @@
-using System.Text;
-
 namespace sysvendas2.Telas;
+using System.Text;
+using sysvendas2.Models;
+
 static class TelaPrincipal
 {
     public static List<Opcao> opcoes;
@@ -8,9 +9,9 @@ static class TelaPrincipal
     {
         opcoes = new List<Opcao>
         {
-            new Opcao(1," ❤️ Cadastrar cliente"),
-            new Opcao(2, "Listar clientes"),
-            new Opcao(3, "Sair")
+            new Opcao(1, "😺 Cadastrar cliente"),
+            new Opcao(2, "📖 Listar clientes"),
+            new Opcao(3, "🚪 Sair")
         };
 
         Opcao newOpt = new Opcao(4, "haudhaushd");

@@ -1,14 +1,16 @@
 using System.Text;
+using sysvendas2.Context;
+using sysvendas2.Models;
 
 namespace sysvendas2.Telas;
 
 static class TelaCadastroCliente
 {
-    public static List<Cliente> clientes;
+    //public static List<Cliente> clientes;
     
     static TelaCadastroCliente()
     {
-        clientes = new List<Cliente>(); 
+        //clientes = new List<Cliente>(); 
     }
 
     public static void Show()
@@ -34,7 +36,8 @@ static class TelaCadastroCliente
         telefoneCliente = Console.ReadLine();
 
         Cliente cliente = new Cliente(_idCliente, nomeCliente, emailCliente, telefoneCliente);
-        clientes.Add(cliente);
+        //clientes.Add(cliente);
+        DBContext.RepositorioClientes.Adicionar(cliente);
         
         Console.WriteLine("Pressione qualquer tecla para continuar...");
         Console.ReadKey();

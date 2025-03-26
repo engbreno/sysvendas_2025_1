@@ -1,4 +1,4 @@
-namespace sysvendas2.Telas;
+namespace sysvendas2.Models;
 
 public class Opcao
 {

@@ -1,4 +1,5 @@
 using System.Text;
+using sysvendas2.Context;
 
 namespace sysvendas2.Telas;
 
@@ -15,11 +16,12 @@ static class TelaListaClientes
         Console.Clear();
         Console.OutputEncoding = Encoding.UTF8;
         ExibeTitulo();
-        foreach (var cliente in TelaCadastroCliente.clientes)
-        {
-            Console.WriteLine($"{cliente.IdCliente}: {cliente.Nome} - {cliente.Email}");
-        }
-       
+        if (DBContext.RepositorioClientes != null)
+            foreach (var cliente in DBContext.RepositorioClientes.ObterTodos())
+            {
+                Console.WriteLine($"{cliente.IdCliente}: {cliente.Nome} - {cliente.Email}");
+            }
+
         Console.WriteLine("Pressione qualquer tecla para continuar...");
         Console.ReadKey();
         TelaPrincipal.Show();
