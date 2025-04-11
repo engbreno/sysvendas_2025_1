@@ -1,28 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\BrenoHPX\\Documents\\Github\\sysvendas_2025_1\\sysvendas2.csproj": {}
+    "C:\\Users\\breno\\Documents\\GitHub\\sysvendas_2025_1\\sysvendas2.csproj": {}
   },
   "projects": {
-    "C:\\Users\\BrenoHPX\\Documents\\Github\\sysvendas_2025_1\\sysvendas2.csproj": {
+    "C:\\Users\\breno\\Documents\\GitHub\\sysvendas_2025_1\\sysvendas2.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\BrenoHPX\\Documents\\Github\\sysvendas_2025_1\\sysvendas2.csproj",
+        "projectUniqueName": "C:\\Users\\breno\\Documents\\GitHub\\sysvendas_2025_1\\sysvendas2.csproj",
         "projectName": "sysvendas2",
-        "projectPath": "C:\\Users\\BrenoHPX\\Documents\\Github\\sysvendas_2025_1\\sysvendas2.csproj",
-        "packagesPath": "C:\\Users\\BrenoHPX\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\BrenoHPX\\Documents\\Github\\sysvendas_2025_1\\obj\\",
+        "projectPath": "C:\\Users\\breno\\Documents\\GitHub\\sysvendas_2025_1\\sysvendas2.csproj",
+        "packagesPath": "C:\\Users\\breno\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\breno\\Documents\\GitHub\\sysvendas_2025_1\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\BrenoHPX\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\breno\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -39,9 +36,9 @@
         "restoreAuditProperties": {
           "enableAudit": "true",
           "auditLevel": "low",
-          "auditMode": "all"
+          "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.100"
+        "SdkAnalysisLevel": "9.0.200"
       },
       "frameworks": {
         "net8.0": {
@@ -60,19 +57,19 @@
           "downloadDependencies": [
             {
               "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[8.0.11, 8.0.11]"
+              "version": "[8.0.14, 8.0.14]"
             },
             {
               "name": "Microsoft.NETCore.App.Host.win-x64",
-              "version": "[8.0.11, 8.0.11]"
+              "version": "[8.0.14, 8.0.14]"
             },
             {
               "name": "Microsoft.NETCore.App.Ref",
-              "version": "[8.0.11, 8.0.11]"
+              "version": "[8.0.14, 8.0.14]"
             },
             {
               "name": "Microsoft.WindowsDesktop.App.Ref",
-              "version": "[8.0.11, 8.0.11]"
+              "version": "[8.0.14, 8.0.14]"
             }
           ],
           "frameworkReferences": {
@@ -80,7 +77,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.100/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.202/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

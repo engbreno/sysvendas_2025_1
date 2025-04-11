@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("sysvendas2")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+856265290e8fdc574b1627e1e7b53b69dfd5930d")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e71eea6bc43de253d1852055cd39d34e2cba615a")]
 [assembly: System.Reflection.AssemblyProductAttribute("sysvendas2")]
 [assembly: System.Reflection.AssemblyTitleAttribute("sysvendas2")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
