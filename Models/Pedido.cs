@@ -14,5 +14,6 @@ public class Pedido
     public DateTime Data { get; set; }
     public Cliente Cliente { get; set; }
     public string Status { get; set; }
-    public List<Produto> Produtos { get; set; }
+    public double Total { get; set; }
+    public List<ItemPedido> Items { get; set; }
 }
