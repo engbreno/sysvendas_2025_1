@@ -24,6 +24,11 @@ public class RepositorioClienteJson : IRepositorioCliente
     {
         return new List<Cliente>(_clientes);
     }
+    
+    public Cliente? ObterCliente(int idcliente)
+    {
+        return _clientes.FirstOrDefault(c => c.IdCliente == idcliente);
+    }
 
     private List<Cliente> CarregarDoArquivo()
     {

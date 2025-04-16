@@ -4,10 +4,11 @@ using sysvendas2.Repository;
 using sysvendas2.Telas;
 using sysvendas2.Models;
 
-//DBContext.RepositorioClientes = new RepositorioClienteJson("clientes.json");
-//DBContext.RepositorioProdutos = new RepositorioProdutoJson("produtos.json");
-//TelaPrincipal.Show();
+DBContext.RepositorioClientes = new RepositorioClienteJson("clientes.json");
+DBContext.RepositorioProdutos = new RepositorioProdutoJson("produtos.json");
+TelaPrincipal.Show();
 
+/*
 Cliente cliente1 = new Cliente(1,"Breno","breno@gmail.com","12345678");
 Produto produto1 = new Produto("BR123","Tenis Rider",100.30,"Calçado");
 Produto produto2 = new Produto("BR333","Calça Renner",100.30,"Starlink");
@@ -34,3 +35,4 @@ var json = JsonSerializer.Serialize(pedido1, new JsonSerializerOptions { WriteIn
 
 Console.WriteLine(pedido1.Cliente.Nome);
 Console.WriteLine(pedido1.Items[0].Produto.Nome);
+*/

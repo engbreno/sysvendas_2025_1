@@ -34,12 +34,3 @@ static class TelaListaClientes
         Console.WriteLine("=======================================");
     }
 }
-
-/*
-        cliente = new List<Cliente>
-        {
-            new Opcao(1," ❤️ Cadastrar cliente"),
-            new Opcao(2, "Listar clientes"),
-            new Opcao(3, "Sair")
-        };
-*/
