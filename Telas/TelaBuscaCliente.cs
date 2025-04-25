@@ -15,10 +15,9 @@ static class TelaBuscaCliente
         Console.OutputEncoding = Encoding.UTF8;
         ExibeTitulo();
 
-        Console.Write("Digite o ID do cliente que deseja buscar: ");
-        if (int.TryParse(Console.ReadLine(), out int idCliente))
-        {
-            var cliente = DBContext.RepositorioClientes?.ObterCliente(idCliente);
+        Console.Write("Digite o Nome do cliente que deseja buscar: ");
+        string nome = Console.ReadLine();
+            var cliente = DBContext.RepositorioClientes?.ObterClienteNome(nome);
 
             if (cliente != null)
             {
@@ -31,11 +30,7 @@ static class TelaBuscaCliente
             {
                 Console.WriteLine("\n❌ Cliente não encontrado.");
             }
-        }
-        else
-        {
-            Console.WriteLine("\n❌ ID inválido. Digite um número inteiro.");
-        }
+        
 
         Console.WriteLine("\nPressione qualquer tecla para continuar...");
         Console.ReadKey();

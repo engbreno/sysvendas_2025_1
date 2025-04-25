@@ -6,6 +6,8 @@ using sysvendas2.Models;
 
 DBContext.RepositorioClientes = new RepositorioClienteJson("clientes.json");
 DBContext.RepositorioProdutos = new RepositorioProdutoJson("produtos.json");
+DBContext.RepositorioPedidos = new RepositorioPedidoJson("pedidos.json");
+
 TelaPrincipal.Show();
 
 /*

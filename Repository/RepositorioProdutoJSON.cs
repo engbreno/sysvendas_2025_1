@@ -25,6 +25,11 @@ public class RepositorioProdutoJson : IRepositorioProduto
         return new List<Produto>(_produtos);
     }
 
+    public Produto ObterProduto(string sku)
+    {
+        return _produtos.FirstOrDefault(p => p.Sku == sku);
+    }
+
     private List<Produto> CarregarDoArquivo()
     {
         if (!File.Exists(_caminhoArquivo))

@@ -14,7 +14,8 @@ static class TelaPrincipal
             new Opcao(3, "📦 Cadastrar produto"),
             new Opcao(4, "📋 Listar produtos"),
             new Opcao(5, "📋 Buscar Cliente"),
-            new Opcao(6, "🚪 Sair")
+            new Opcao(6, "📋 Adicionar Pedido"),
+            new Opcao(7, "🚪 Sair")
         };
         
         
@@ -35,7 +36,7 @@ static class TelaPrincipal
 
             if (int.TryParse(Console.ReadLine(), out int opcaoSelecionada))
             {
-                if (opcaoSelecionada == 6)
+                if (opcaoSelecionada == 7)
                 {
                     Console.WriteLine("\nSaindo...");
                     break;
@@ -63,6 +64,11 @@ static class TelaPrincipal
                 {
                     Console.WriteLine("\nBuscando clientes");
                     TelaBuscaCliente.Show();
+                }
+                else if (opcaoSelecionada == 6)
+                {
+                    Console.WriteLine("\nAdicioando pedido");
+                    TelaCadastroPedido.Show();
                 }
             }
             else

@@ -25,9 +25,17 @@ public class RepositorioClienteJson : IRepositorioCliente
         return new List<Cliente>(_clientes);
     }
     
-    public Cliente? ObterCliente(int idcliente)
+    public Cliente? ObterClienteId(int idcliente)
     {
         return _clientes.FirstOrDefault(c => c.IdCliente == idcliente);
+    }
+
+    public Cliente? ObterClienteNome(string nomecliente)
+    {
+        var resultado = _clientes
+            .Where(c => c.Nome.StartsWith(nomecliente))
+            .OrderBy(c => c.Nome);
+        return resultado.FirstOrDefault();
     }
 
     private List<Cliente> CarregarDoArquivo()
