@@ -4,10 +4,13 @@ using sysvendas2.Repository;
 using sysvendas2.Telas;
 using sysvendas2.Models;
 
-DBContext.RepositorioClientes = new RepositorioClienteJson("clientes.json");
+//DBContext.RepositorioClientes = new RepositorioClienteJson("clientes.json");
 DBContext.RepositorioProdutos = new RepositorioProdutoJson("produtos.json");
 DBContext.RepositorioPedidos = new RepositorioPedidoJson("pedidos.json");
 
+var connStr = "Host=localhost;Port=5432;Username=postgres;Password=123456;Database=loja";
+DBContext.RepositorioClientes = new RepositorioClientePostgres(connStr);
+((RepositorioClientePostgres)DBContext.RepositorioClientes).CriarTabelas();
 TelaPrincipal.Show();
 
 /*

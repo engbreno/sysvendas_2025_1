@@ -57,3 +57,9 @@ C:\Github\sysvendas_2025_1\obj\Debug\net8.0\refint\sysvendas2.dll
 C:\Github\sysvendas_2025_1\obj\Debug\net8.0\sysvendas2.pdb
 C:\Github\sysvendas_2025_1\obj\Debug\net8.0\sysvendas2.genruntimeconfig.cache
 C:\Github\sysvendas_2025_1\obj\Debug\net8.0\ref\sysvendas2.dll
+C:\Users\breno\Documents\GitHub\sysvendas_2025_1\bin\Debug\net8.0\Dapper.dll
+C:\Users\breno\Documents\GitHub\sysvendas_2025_1\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\breno\Documents\GitHub\sysvendas_2025_1\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\breno\Documents\GitHub\sysvendas_2025_1\bin\Debug\net8.0\Npgsql.dll
+C:\Users\breno\Documents\GitHub\sysvendas_2025_1\obj\Debug\net8.0\sysvendas2.csproj.AssemblyReference.cache
+C:\Users\breno\Documents\GitHub\sysvendas_2025_1\obj\Debug\net8.0\sysvendas2.csproj.Up2Date
