@@ -27,11 +27,29 @@ public class RepositorioClientePostgres : IRepositorioCliente
         conn.Execute(sql);
     }
     
-    public void Adicionar(Cliente cliente)
+    public async Task<Cliente?> Adicionar(Cliente cliente)
     {
-        var sql = "INSERT INTO Clientes (Nome, Email, Telefone) VALUES (@Nome, @Email, @Telefone)";
+        Console.WriteLine(" Chasdiuhasuidhsaudhuashdasdusa");
+        var sql = "INSERT INTO Clientes (Nome, Email, Telefone) VALUES (@Nome, @Email, @Telefone) RETURNING *";
         using var conn = new NpgsqlConnection(_connStr);
-        conn.Execute(sql, cliente);
+        await conn.OpenAsync();
+        using var cmd = new NpgsqlCommand(sql, conn);
+        cmd.Parameters.AddWithValue("Nome", cliente.Nome);
+        cmd.Parameters.AddWithValue("Email", cliente.Email);
+        cmd.Parameters.AddWithValue("Telefone", cliente.Telefone);
+        using var reader = await cmd.ExecuteReaderAsync();
+        if (await reader.ReadAsync())
+        {
+            int id = reader.GetInt32(0);
+            string nome = reader.GetString(1);
+            string email = reader.GetString(2);
+            string telefone = reader.GetString(3);
+            var clienteReturn = new Cliente(id, nome, email,telefone);
+            return clienteReturn;
+        }
+
+        return null;
+
     }
 
     public List<Cliente> ObterTodos()

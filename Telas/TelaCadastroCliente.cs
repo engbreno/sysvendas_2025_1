@@ -7,6 +7,7 @@ namespace sysvendas2.Telas;
 static class TelaCadastroCliente
 {
     //public static List<Cliente> clientes;
+ 
     
     static TelaCadastroCliente()
     {
@@ -37,7 +38,8 @@ static class TelaCadastroCliente
 
         Cliente cliente = new Cliente(_idCliente, nomeCliente, emailCliente, telefoneCliente);
         //clientes.Add(cliente);
-        DBContext.RepositorioClientes.Adicionar(cliente);
+        var clienteDB = DBContext.RepositorioClientes.Adicionar(cliente);
+        Console.WriteLine(clienteDB.Result.IdCliente.ToString());
         
         Console.WriteLine("Pressione qualquer tecla para continuar...");
         Console.ReadKey();
